@@ -1,0 +1,18 @@
+# Backups / archives (the 103 MB new_heuristic.zip exceeds GitHub's 100 MB limit)
+*.zip
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+env/
+
+# Superseded / duplicate working copies (kept on disk, not tracked in git)
+Benchmark/heuristic/
+Synthetic/01_Synthetic_Normal.ipynb
+Synthetic/02_Synthetic_Hetero.ipynb
+Synthetic/Synthetic_Hetero_results.xlsx
+Synthetic/Synthetic_Normal_results.xlsx
+Synthetic/plots/

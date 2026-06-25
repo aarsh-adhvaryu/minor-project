@@ -1,8 +1,14 @@
-numpy
-scipy
-pandas
-scikit-learn
-torch
-matplotlib
-seaborn
-openpyxl
+# Robust-TPL UQ benchmark — pip dependencies.
+# Loose lower bounds; tested with recent stable releases.
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+torch>=2.0
+matplotlib>=3.7
+seaborn>=0.12
+openpyxl>=3.1
+# notebook execution (used by reproduce.py)
+jupyter>=1.0
+nbconvert>=7.0
+ipykernel>=6.0

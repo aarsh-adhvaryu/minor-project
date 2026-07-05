@@ -1,0 +1,135 @@
+Traceback (most recent call last):
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\jsonschema\_format.py", line 304, in <module>
+    import rfc3987
+ModuleNotFoundError: No module named 'rfc3987'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Scripts\jupyter-nbconvert.EXE\__main__.py", line 2, in <module>
+    from nbconvert.nbconvertapp import main
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\__init__.py", line 6, in <module>
+    from . import filters, postprocessors, preprocessors, writers
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\filters\__init__.py", line 8, in <module>
+    from .markdown import (
+    ...<6 lines>...
+    )
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\filters\markdown.py", line 16, in <module>
+    from .markdown_mistune import markdown2html_mistune
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\filters\markdown_mistune.py", line 21, in <module>
+    from nbconvert.filters.strings import add_anchor
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\filters\strings.py", line 23, in <module>
+    from nbconvert.preprocessors.sanitize import _get_default_css_sanitizer
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\preprocessors\__init__.py", line 3, in <module>
+    from nbclient.exceptions import CellExecutionError
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbclient\__init__.py", line 2, in <module>
+    from .client import NotebookClient, execute
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbclient\client.py", line 19, in <module>
+    from nbformat import NotebookNode
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbformat\__init__.py", line 14, in <module>
+    from . import v1, v2, v3, v4
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbformat\v4\__init__.py", line 24, in <module>
+    from .convert import downgrade, upgrade
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbformat\v4\convert.py", line 12, in <module>
+    from nbformat import v3, validator
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbformat\validator.py", line 17, in <module>
+    from .json_compat import ValidationError, _validator_for_name, get_current_validator
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbformat\json_compat.py", line 13, in <module>
+    import jsonschema
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\jsonschema\__init__.py", line 13, in <module>
+    from jsonschema._format import FormatChecker
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\jsonschema\_format.py", line 328, in <module>
+    from rfc3987_syntax import is_valid_syntax as _rfc3987_is_valid_syntax
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\rfc3987_syntax\__init__.py", line 1, in <module>
+    from .syntax_helpers import *
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\rfc3987_syntax\syntax_helpers.py", line 150, in <module>
+    is_valid_syntax_hexdig = make_syntax_validator("hexdig")
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\rfc3987_syntax\syntax_helpers.py", line 66, in make_syntax_validator
+    parser = Lark(grammar, start=rule_name, parser=RFC3987_SYNTAX_PARSER_TYPE)
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\lark\lark.py", line 424, in __init__
+    self.terminals, self.rules, self.ignore_tokens = self.grammar.compile(self.options.start, terminals_to_keep)
+                                                     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\lark\load_grammar.py", line 740, in compile
+    tree = transformer.transform(rule_tree)
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\lark\visitors.py", line 264, in transform
+    tree = t.transform(tree)
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\lark\visitors.py", line 283, in transform
+    for subtree in tree.iter_subtrees():
+                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\lark\tree.py", line 146, in iter_subtrees
+    queue += [c for c in reversed(subtree.children)
+                         ~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+on\Python313\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbconvert\preprocessors\execute.py", line 97, in preprocess
+    with self.setup_kernel():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\site-packages\nbclient\client.py", line 609, in setup_kernel
+    self._cleanup_kernel()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dnaad\AppData\Roaming\Python\Python313\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 446, in select
+    self._poll(timeout)
+    ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\dnaad\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 775, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "D:\projects\.venv\Lib\site-packages\ipykernel\kernelbase.py", line 478, in dispatch_shell
+    await result
+  File "D:\projects\.venv\Lib\site-packages\ipykernel\ipkernel.py", line 372, in execute_request
+    await super().execute_request(stream, ident, parent)
+  File "D:\projects\.venv\Lib\site-packages\ipykernel\kernelbase.py", line 857, in execute_request
+    reply_msg: dict[str, t.Any] = self.session.send(  # type:ignore[assignment]
+                                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        stream,
+        ^^^^^^^
+    ...<4 lines>...
+        ident=ident,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\projects\.venv\Lib\site-packages\jupyter_client\session.py", line 867, in send
+    stream.send_multipart(to_send, copy=copy)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\.venv\Lib\site-packages\zmq\sugar\socket.py", line 749, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\.venv\Lib\site-packages\zmq\sugar\socket.py", line 698, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1152, in zmq.backend.cython._zmq.Socket.send
+    def send(self, data, flags=0, copy: bint = True, track: bint = False):
+    ^^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1194, in zmq.backend.cython._zmq.Socket.send
+    _check_closed(self)
+    ^^^
+  File "zmq/backend/cython/_zmq.py", line 1339, in zmq.backend.cython._zmq._check_closed
+    raise ZMQError(ENOTSOCK)
+    ^^^
+zmq.error.ZMQError: not a socket
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
